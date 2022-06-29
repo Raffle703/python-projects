@@ -22,6 +22,12 @@ def game():
 
         print_score(score)
         cont = input("Type 'c' to continue or 'q' to quit: ")
+    if score[0] > score[1]:
+        print("You won the game")
+    elif score[0] < score[1]:
+        print("You lost the game")
+    else :
+        print("Tie game")
 
 
 def print_score(score):
